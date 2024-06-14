@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="shortcut icon" href="img/calculator_icon-icons.com_72046.png" type="png">
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+   <div class="glaw">
+    <h1>
+        Калькулятор <b>Volt</b>
+    </h1>
+
+    <h2>Ваш верный  помощник🤗</h2>
+</div> 
+<div class="fse1">
+    <script>
+        function calculate1() {
+            var R = parseFloat(document.getElementById('R').value);
+            var r = parseFloat(document.getElementById('r').value);
+
+            if (!isNaN(r) && !isNaN(R) && r > 0 && R > 0) {
+                var sideArea = Math.PI*(Math.pow(R, 2)-Math.pow(r, 2));
+
+                var result=     "Ответ: \n" + 
+                            "S=" + sideArea.toFixed(2) + "\n"+
+                            "-----------------------";
+                            
+            alert(result);
+
+            } 
+            else {
+                alert() = "Пожалуйста, введите положительные числовые значения для радиуса основания и высоты.";
+            }
+        }
+    </script>
+<div class="vixe1">
+    <h3 class="p1">Площадь кольца с внешним радиусом:</h3>
+    <form class="fr">
+        <label  for="outerRadius">Внешний радиус (R):</label>
+        <input id="R" type="number"  name="outerRadius"><br><br>
+        <label  for="innerRadius">Внутренний радиус (r):</label>
+        <input type="number" id="r" name="innerRadius"><br><br>
+        <button  class="but" type="button" onclick="calculate1()">Вычислить</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="vixe2">
+    <script>
+        function calculate2() {
+            var h = parseFloat(document.getElementById('h').value);
+            var r = parseFloat(document.getElementById('r').value);
+
+            if (!isNaN(r) && !isNaN(h) && r > 0 && h > 0) {
+                var S = 2*Math.PI*r*h;
+                var V = Math.PI*Math.pow(r, 2)*h;
+
+                var result=     "Ответ: \n" + 
+                "S=" + S.toFixed(2) + "\n"+
+                "V=" + V.toFixed(2) + "\n"+
+                "-----------------------";
+                
+alert(result);
+
+
+            } else {
+               
+                alert() = "Пожалуйста, введите положительные числовые значения для радиуса основания и высоты.";
+            }
+        }
+    </script>
+    <h3 class="p1">Площадь боковой поверхности:</h3>
+    <form>
+        <label  for="outerRadius">Внешний радиус (h):</label>
+        <input  id="h" type="number"  name="outerRadius"><br><br>
+        <label  for="innerRadius">Внутренний радиус (r):</label>
+        <input  id="r" type="number"  name="innerRadius"><br><br>
+        <button  class="but" type="button" onclick="calculate2()">Вычислить</button>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fse2">
+    <div class="vixe3">
+        <script>
+            function calculate3() {
+                var a = parseFloat(document.getElementById('radius').value);
+
+                if (!isNaN(a) && a > 0) {
+                    var sideArea = a*a;
+                    var volume = a*4;
+    
+                    var result=     "Ответ: \n" + 
+                "S=" + sideArea.toFixed(2) + "\n"+
+                "P=" + volume.toFixed(2) + "\n"+
+                "-----------------------";
+                
+alert(result);
+                } else {
+                    document.getElementById('result').innerHTML = "Пожалуйста, введите положительные числовые значения для радиуса основания и высоты.";
+                }
+            }
+        </script>
+        <h3 class="p1">Площaдь и периметр:</h3>
+        <form>
+            <label for="radius">Сторона (а):</label>
+            <input type="number" id="radius" name="radius"><br><br>
+
+            <button class="but" type="button" onclick="calculate3()">Вычислить</button>
+        </form>
+
+
+
+
+
+
+
+
+    </div>
+    <div class="vixe4">
+        <script>
+            function calculate4() {
+                var a = parseFloat(document.getElementById('sideA').value);
+                var b = parseFloat(document.getElementById('sideB').value);
+    
+                if (!isNaN(a) && !isNaN(b) && a > 0 && b > 0) {
+                    var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+                    var area = 0.5 * a * b;
+                    var perimeter = a + b + c;
+    
+                    var result=     "Ответ: \n" + 
+                "S=" + area.toFixed(2) + "\n"+
+                "P=" + perimeter.toFixed(2) + "\n"+
+                "-----------------------";
+                
+alert(result);
+                } else {
+                    alert() = "Пожалуйста, введите положительные числовые значения для катетов a и b.";
+                }
+            }
+        </script>
+        <h3 class="p1">Площадь боковой поверхности:</h3>
+        <form>
+            <label for="sideA">Катет (a):</label>
+            <input type="number" id="sideA" name="sideA"><br><br>
+            <label for="sideB">Катет (b):</label>
+            <input type="number" id="sideB" name="sideB"><br><br>
+            <button class="but" type="button" onclick="calculate4()">Вычислить</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="fse2">
+    <div class="vixe3">
+        <script>
+            function lol() {
+                var a = parseFloat(document.getElementById('sideA1').value);
+                var b = parseFloat(document.getElementById('sideB1').value);
+                var c = parseFloat(document.getElementById('sideC1').value);
+    
+                if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+                    var volume = a * b * c;
+                    var sideArea = 2 * ( a + b ) *c; 
+    
+                    var result=     "Ответ: \n" + 
+                "V=" + volume.toFixed(2) + "\n"+
+                "S=" + sideArea.toFixed(2) + "\n"+
+                "-----------------------";
+                
+                 alert(result);
+                } else {
+                    
+                    document.getElementById('result').innerHTML = "Пожалуйста, введите числовые значения.";;
+                }
+            }
+        </script>
+        <h3 class="p1">Вычисление объема и площади боковой поверхности параллелепипеда:</h3>
+        <form>
+            <label for="sideA">Сторона a:</label>
+            <input type="number" id="sideA1" name="sideA"><br><br>
+            <label for="sideB">Сторона b:</label>
+            <input type="number" id="sideB1" name="sideB"><br><br>
+            <label for="sideC">Сторона c:</label>
+            <input type="number" id="sideC1" name="sideC"><br><br>
+            <button class="but" type="button" onclick="lol()">Вычислить</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <div class="vixe4">
+        <script>
+            function ala() {
+                var a = parseFloat(document.getElementById('side2').value);
+                if (!isNaN(a) && a > 0) {
+                    var volume = Math.pow(a, 3);
+                    var surfaceArea = 6 * Math.pow(a, 2);
+                    var result = "Ответ: \n" + 
+                "V=" + volume.toFixed(2) + "\n"+
+                "S=" + surfaceArea.toFixed(2) + "\n"+
+                "-----------------------";
+                    
+                alert(result);
+                } 
+                else {
+                    document.getElementById('result').innerHTML = "Пожалуйста, введите положительное числовое значение для стороны куба.";
+                }
+            }
+        </script>
+        <h3 class="p1">Вычисление объема и площади поверхности куба:</h3>
+        <form>
+            <label for="side2">Длина стороны (a):</label>
+            <input type="number" id="side2" name="side2"><br><br>
+            <button class="but" type="button" onclick="ala()">Вычислить</button>
+        </form>
+        
+    </div>
+</div>
+<footer>
+<div class="foot">
+    <h1 id="h1">Рады вам помочь😁</h1>
+    <h2>Для обратной связи:</h2>
+    <div class="png">
+    <div><img src="img/whatsapp.png"></div>
+    <div  id="ff"><img src="img/telegram.png"></div>
+</div>
+</div>
+</footer>
+</body>
+</html>

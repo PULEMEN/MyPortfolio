@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахматные угрозы</title>
+</head>
+<body>
+    <h1>Проверка ходов и угроз шахматных фигур</h1>
+    
+    <label for="whitePiece">Выберите белую фигуру:</label>
+    <select id="whitePiece">
+        <option value="rook">Ладья</option>
+        <option value="bishop">Слон</option>
+        <option value="queen">Ферзь</option>
+        <option value="knight">Конь</option>
+        <option value="king">Король</option>
+    </select>
+    
+    <label for="blackPiece">Выберите черную фигуру:</label>
+    <select id="blackPiece">
+        <option value="rook">Ладья</option>
+        <option value="bishop">Слон</option>
+        <option value="queen">Ферзь</option>
+        <option value="knight">Конь</option>
+        <option value="king">Король</option>
+    </select>
+    
+    <button onclick="checkMove()">Проверить ход</button>
+    
+    <p id="result"></p>
+    
+    <script>
+        function isRookThreatening(a, b, c, d) {
+            return a === c || b === d;
+        }
+
+        function isBishopThreatening(a, b, c, d) {
+            return Math.abs(a - c) === Math.abs(b - d);
+        }
+
+        function isQueenThreatening(a, b, c, d) {
+            return isRookThreatening(a, b, c, d) || isBishopThreatening(a, b, c, d);
+        }
+
+        function isKnightThreatening(a, b, c, d) {
+            return (Math.abs(a - c) === 2 && Math.abs(b - d) === 1) || (Math.abs(a - c) === 1 && Math.abs(b - d) === 2);
+        }
+
+        function isKingThreatening(a, b, c, d) {
+            return Math.abs(a - c) <= 1 && Math.abs(b - d) <= 1;
+        }
+
+        function canWhiteMove(a, b, e, f, whitePiece) {
+            if (whitePiece === 'rook') {
+                return isRookThreatening(a, b, e, f);
+            } else if (whitePiece === 'bishop') {
+                return isBishopThreatening(a, b, e, f);
+            } else if (whitePiece === 'queen') {
+                return isQueenThreatening(a, b, e, f);
+            } else if (whitePiece === 'knight') {
+                return isKnightThreatening(a, b, e, f);
+            } else if (whitePiece === 'king') {
+                return isKingThreatening(a, b, e, f);
+            }
+            return false;
+        }
+
+        function isBlackThreatening(c, d, e, f, blackPiece) {
+            if (blackPiece === 'rook') {
+                return isRookThreatening(c, d, e, f);
+            } else if (blackPiece === 'bishop') {
+                return isBishopThreatening(c, d, e, f);
+            } else if (blackPiece === 'queen') {
+                return isQueenThreatening(c, d, e, f);
+            } else if (blackPiece === 'knight') {
+                return isKnightThreatening(c, d, e, f);
+            } else if (blackPiece === 'king') {
+                return isKingThreatening(c, d, e, f);
+            }
+            return false;
+        }
+
+        function checkMove() {
+            //белая
+            let a = 2, b = 1;
+            //черная
+            let c = 4, d = 3;
+            //куда идти
+            let e = 2, f = 2;
+
+            let whitePiece = document.getElementById('whitePiece').value;
+            let blackPiece = document.getElementById('blackPiece').value;
+
+            let canMove = canWhiteMove(a, b, e, f, whitePiece);
+            let isUnderThreat = isBlackThreatening(c, d, e, f, blackPiece);
+
+            let resultText = '';
+            if (canMove) {
+                resultText = 'Белая фигура может пойти на поле (' + e + ', ' + f + ')';
+                if (isUnderThreat) {
+                    resultText += ', но это поле опасно';
+                } else {
+                    resultText += ' и это поле не опасно';
+                }
+            } else {
+                resultText = 'Белая фигура не может пойти на поле (' + e + ', ' + f + ')';
+
+                if (isUnderThreat) {
+                    resultText += ', но это поле опасно'
+
+                }
+
+                else {
+                    resultText += ' и это поле не опасно';
+                }
+            }
+
+            document.getElementById('result').textContent = resultText;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css1.css" >
+   
+   <script type="text/javascript">
+ 
+
+
+function updateOrder() {
+
+var TAXRATE = 900;
+var DONUTPRICE = 700;
+
+var numCa = parseDonuts(document.getElementById("cakedonuts").value);
+var numGl = parseDonuts(document.getElementById("glazeddonuts").value);
+var numCkid = parseDonuts(document.getElementById("pickupminutes").value);
+if (numCkid < 1 || numCkid > 5) {
+                alert("Пожалуйста, введите скидку от 1 до 5 процентов.");
+                return;
+            }
+
+if (isNaN(numCa))
+numCa = 0;
+if (isNaN(numGl))
+numGl = 0;
+if (isNaN(numCkid))
+numCkid = 0;
+
+var now = new Date().toLocaleDateString();
+var now1 = new Date().toLocaleTimeString(); 
+
+var b = TAXRATE * numCa;
+var bb = DONUTPRICE * numGl;
+var f = b + bb;
+var subTotal = (f * numCkid) / 100;
+var itog = f - subTotal;
+
+
+
+document.getElementById("subtotal").value =  f + "₽" ;
+document.getElementById("total").value = itog + "₽";
+
+  
+ var result =         " OOO Евроторг  \n" +
+                        "------- СПАСИБО ЗА ПОКУПКУ! -----------\n" +
+                        "Дата покупки: " + now + "⠀⠀⠀" + now1 + "\n" +
+                         "Бутерброд с котлетой: " + numCa.toFixed(2) + " шт.\n" +
+                         "Бутерброд с курицей: " + numGl.toFixed(2) + " шт.\n" +
+                         "Цена без скидки: " + f.toFixed(2) + " ₽.\n" +
+                         "Стоимость покупки со скидкой: " + itog.toFixed(2) + " ₽.\n" +
+                         "------------------------------------------------";
+    alert(result)  
+}
+
+
+function parseDonuts(donutString) {
+numDonuts = parseInt(donutString);
+if (donutString.indexOf("dozen") != -1)
+numDonuts *= 12;
+return numDonuts;
+}
+
+
+</script>
+
+</head>
+<body>
+    <div class="vs">
+        <div class="vs2"></div>
+<div id="frame">
+    <div class="dd1">
+<div class="h1"><strong>Покупка</strong></div>
+<div class="h2"><strong>Ваши товары:</strong></div></div> <div id="left">
+</div>
+    <div class="dd2">
+<div class="field1"> Бутерброд с котлетой: <input type="text" id="cakedonuts" name="cakedonuts" value="" />
+</div>
+<div class="field1">
+    Бутерброд с курицей: <input type="text" id="glazeddonuts" name="glazeddonuts" value=""
+ />
+</div>
+<div class="field1">
+Скидка(от 1-5%): <input type="text" id="pickupminutes" name="pickupminutes" value="" />
+</div>
+</div>
+<div class="field">
+Сумма без скидки: <input type="text" id="subtotal" name="subtotal" value="" readonly="readonly" />
+</div>
+<div class="field">
+Готовая сумма: <input type="text" id="total" name="total" value="" readonly="readonly" /> </div>
+<div class="field">
+    <button onclick="updateOrder()">Выдать чек</button>
+
+</form>
+</body>
+</html>

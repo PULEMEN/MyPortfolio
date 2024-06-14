@@ -1,0 +1,110 @@
+html {
+    background-color: #626E73;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+}
+
+body {
+    margin: 0px;
+}
+h1 {
+    text-align: center;
+    font-size: 42px;
+}
+h2 {
+    text-align: center;
+}
+b {
+    color: #05DBF2;
+}
+.glaw {
+    color: #05AFF2;
+}
+.p1 {
+    font-size: 24px;
+    color: #05AFF2;
+}
+.vixe1 {
+    
+    color: #05DBF2;
+    width: 30%;
+    padding: 50px;
+    border: solid;
+}
+.vixe2 {
+    
+    color: #05DBF2;
+    width: 30%;
+    padding: 50px;
+    border: solid;
+    border-left: 0px;
+}
+
+.but {
+    border: 0px;
+    font-size: 18px;
+    background-color: #05AFF2;
+    color: #626E73;
+}
+.but:active {
+    background-color: #3D6879;
+}
+.fse1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.fse2 {
+    display: flex;
+    justify-content: center;
+}
+.vixe3 {
+    
+    color: #05DBF2;
+    width: 30%;
+    padding: 50px;
+    border: solid;
+    border-top: 0px;
+}
+.vixe4 {
+    
+    color: #05DBF2;
+    width: 30%;
+    padding: 50px;
+    border: solid;
+    border-top: 0px;
+    border-left: 0px;
+}
+footer {
+    background-color: #3D6879;
+    padding: 4%;
+    margin-top: 4%;
+}
+.foot {
+    color: #05AFF2;
+    justify-content: center;
+}
+.png {
+   display: flex;
+   justify-content: center;
+   margin-top: 2%;
+}
+#ff {
+    
+    margin-left: 30px;
+}
+h2 {
+    color: #05DBF2;
+}
+img:hover {
+    cursor: pointer;
+
+}
+.but:hover {
+    cursor: url("img/equal.png"), auto;
+}
+.but {
+    border-radius: 5%;
+}

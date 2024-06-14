@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Слой 2.png" type="png">
+    <link rel="stylesheet" href="css.css"/>
+    <title>PORFOLIO</title>
+    <script>    
+    </script>
+</head>
+<body>
+    <button id="themeToggle"><img id="cun" src="img/sun-4-48.png" alt=""> </button>
+<script>
+    document.getElementById('themeToggle').addEventListener('click', function() {
+    const img1 = document.getElementById('cun');
+    const currentTheme = document.body.className;
+    const bl = [
+        'img/sun-4-48.png'
+    ];
+    const or = [
+        'img/moon-2-48.png'
+    ]
+    if (currentTheme === 'light-theme') {
+        document.body.className = 'dark-theme';
+        img1.src = bl
+
+    } else {
+        document.body.className = 'light-theme';
+        img1.src = or
+    }
+});
+</script>
+    <script src="script.js"></script>
+
+<div class="main">
+    <div id="div1">
+    <img  id="img1" src="img/Слой 2.png" alt="">
+    </div>
+<div class="mid">
+    <div id="div2">
+    <h1 class="animated-text"> Это мой сайт-портфолио,<br>
+        здесь вы можете ознакомиться<br>
+        с моими <b>работами.</b><br>
+        <b>Приятного просмотра</b>😁</h1>
+    </div>
+    <div id="foto">
+        <img class="ff" id="img2" src="img/клад (1).png" alt="Клад" style="width:  150px;">
+        <img class="ff" id="img3" src="img/поезд.png" alt="поезд" style="width:  150px;" >
+        <img class="ff" id="img4" src="img/светофор.png" alt="светофор" style="width: 150px;">
+    </div>
+    <script src="js_img2.js"> 
+    </script>
+    <script src="js_img3.js">
+    </script>
+    <script src="js_img4.js">
+    </script>
+</div>
+</div>
+<div id="code">
+    <h1 class="text1">Работы по Web-разроботке</h1>   
+   <section><h2></h2>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <input type="radio" name="slides" id="slide-7">
+                <input type="radio" name="slides" id="slide-8">
+                <input type="radio" name="slides" id="slide-9">
+                <input type="radio" name="slides" id="slide-10">
+                <input type="radio" name="slides" id="slide-11">
+                <input type="radio" name="slides" id="slide-12">
+                <input type="radio" name="slides" id="slide-13">
+
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="gg" >
+                                <img src="img/Калькулятор.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Сайт <b>калькулятор</b> со сборником многих формул.</p>
+                                <a href="сайты/калькулятор.html"  target="_blank">Перейти</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/клад (1).png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Хочешь стать <b>пиратом</b> и искать <b>сокровища?</b> Тогда тебе сюда.</p>
+                                <a href="сайты/клад.html"  target="_blank">Перейти</a>                           
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/корова.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p><b>Му муу...</b> Легки сайт с коровкой.</p>
+                                <a href="сайты/корова.html"  target="_blank">Перейти</a>                             
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/кухня.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Сайт с вкусными <b>рецептами от Кристины.</b></p>
+                                <a href="сайты/корова.html"  target="_blank">Перейти</a> 
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/пирог.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Хотел испечь <b>пирог</b>, а получился <b>сайт.</b></p>
+                                <a href="сайты/черешневый пирог.html"  target="_blank">Перейти</a>                             
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/поезд.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Так мне на стнцию<b> 9 и 3/4.</b>Сайт расписание<b> поезда.</b></p>
+                                <a href="сайты/поезд.html"  target="_blank">Перейти</a>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/Регистр.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Сайт без <b>смс</b> и <b>регестрации.</b></p>
+                                <a href="сайты/Регистрация.html"  target="_blank">Перейти</a> 
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/светофор.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Всё ещё <b>желтый,</b> я <b>успею.</b></p>
+                                <a href="сайты/светофор.html"  target="_blank">Перейти</a>                      
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/собака.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>И <b>животным</b> нужен  свой <b>врач.</b></p>
+                                <a href="сайты/корова.html"  target="_blank">Перейти</a>                           
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/Шахмоты.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Даже <b>Магнус Карлсен</b> тихо курит в сторонке.</p>
+                                <a href="сайты/шахматы.html"  target="_blank">Перейти</a>                           
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/чек.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Спасибо <b>здачи</b> не надо, дайте только <b>чек.</b></p>
+                                <a href="сайты/чек.html"  target="_blank">Перейти</a>                             
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/фреланс.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p><b>Ого</b> и я могу стать фрилансером. Сайт <b>фриланса.</b></p>
+                                <a href="сайты/шахматы.html"  target="_blank">Перейти</a>                          
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="img/Синий сайт.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p>Один из <b>первых</b> моих сайтов, <b>несудите</b> сторго.</p>
+                                <a href="сайты/INDEX.HTML"  target="_blank">Перейти</a>                            
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="img/Калькулятор.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="img/клад (1).png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="img/корова.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="img/кухня.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="img/пирог.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="img/поезд.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-7"><img src="img/Регистр.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-8"><img src="img/светофор.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-9"><img src="img/собака.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-10"><img src="img/Шахмоты.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-11"><img src="img/чек.png" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-12"><img src="img/фреланс.png" alt=""></label>
+             </li>
+                    <li>
+                        <label for="slide-13"><img src="img/Синий сайт.png" alt=""></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="dis">
+    <h1 class="text2">Работы по Web-дизайну</h1>
+    <h2 class="text3">Здесь расположены работы которые были сделаны на программе  <b>Adobe Photoshop/Illustrator.</b></h2>
+</div>
+    <div id="mar">
+        <div class="marquee" >
+        <div class="border">
+        <span>
+           <img class="marI" src="img/дизайн/glass.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Golden Stuff.png" alt="" >
+            <img class="marI" src="img/дизайн/Milka.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Winter Background.jpg" alt="" >
+            <img class="marI" src="img/дизайн/батарейка.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Бенгальский огонь.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Вязаный текст.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Девушка фото.jpg" alt="" >
+            <img class="marI" src="img/дизайн/зд 1.jpg" alt="" >
+            <img class="marI" src="img/дизайн/зд 2.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Зимний паттерн.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Красные шары.jpg" alt="" >
+            <img class="marI" src="img/дизайн/лиса дисней.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Нарцисс.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Торнадо Долик.jpg" alt="">
+            <img class="marI" src="img/дизайн/ROCA.png" alt="">
+            <img class="marI" src="img/дизайн/бейдж.png" alt="">
+            <img class="marI" src="img/дизайн/календарь.png" alt="">
+            <img class="marI" src="img/дизайн/мини зелёный_page-0001.jpg" alt="">
+            <img class="marI" src="img/дизайн/мини чёрный_page-0001.jpg" alt="">
+            <img class="marI" src="img/дизайн/Футболка.png" alt="">
+        </span>
+        <span>      
+            <img class="marI" src="img/дизайн/glass.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Golden Stuff.png" alt="" >
+            <img class="marI" src="img/дизайн/Milka.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Winter Background.jpg" alt="" >
+            <img class="marI" src="img/дизайн/батарейка.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Бенгальский огонь.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Вязаный текст.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Девушка фото.jpg" alt="" >
+            <img class="marI" src="img/дизайн/зд 1.jpg" alt="" >
+            <img class="marI" src="img/дизайн/зд 2.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Зимний паттерн.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Красные шары.jpg" alt="" >
+            <img class="marI" src="img/дизайн/лиса дисней.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Нарцисс.jpg" alt="" >
+            <img class="marI" src="img/дизайн/Торнадо Долик.jpg" alt="">
+            <img class="marI" src="img/дизайн/ROCA.png" alt="">
+            <img class="marI" src="img/дизайн/бейдж.png" alt="">
+            <img class="marI" src="img/дизайн/календарь.png" alt="">
+            <img class="marI" src="img/дизайн/мини зелёный_page-0001.jpg" alt="">
+            <img class="marI" src="img/дизайн/мини чёрный_page-0001.jpg" alt="">
+            <img class="marI" src="img/дизайн/Футболка.png" alt="">
+        </span>
+        </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="fg">
+       <h1 class="text4">Заключение</h1>
+    </div>
+       <div class="fg">
+        <p class="p1">В <b>заключении</b> хотелось бы сказать что этот курс был для меня очень <b>познавательным</b> и я надеюсь в дальнейшем <b>улучить</b> свой навыки в этой <b>сфере.</b></p>
+    </div>
+        <div class="fg">
+            <p>Номер для связи со мной:<b>+77773088056</b></p>
+        </div>
+        <div class="fg">
+            <p>Почта:<b>dalelzeksenbai84@mail.ru</b></p>
+        </div>
+        <div class="fg">
+            <p>Дата создания:<b>14.06.2024</b></p>
+        </div>
+</footer>
+</body>
+</html>

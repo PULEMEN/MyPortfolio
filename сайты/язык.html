@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function showLanguage() {
+            var lang = document.getElementById('d1').value.trim();
+            var lol;
+
+            if (lang === "ru") {
+                lol = "Во времена правления королевы Виктории, в 1870 году, шпицы из Англии попадают в Европу, где начинается работа по созданию карликовой формы, улучшению «одёжки» померанца и приданию ему общей изысканности. Красота лучших представителей английских и американских шпицев оказывает большое влияние на заводчиков всего мира, и постепенно шпицы в других странах видоизменяются, подтягиваясь к эталонному померанскому шпицу. Сама королева так любила своего шпица Марко, что была с ним всегда и везде.";
+            } else if (lang === "en") {
+                lol = "During the reign of Queen Victoria, in 1870, Spitz dogs from England came to Europe, where work began on creating a dwarf form, improving the “clothing” of the Pomeranian and giving it overall sophistication. The beauty of the best representatives of English and American Spitz has a great influence on breeders all over the world, and gradually Spitz in other countries are modified, catching up to the standard Pomeranian. The queen herself loved her Spitz Marco so much that she was with him always and everywhere.";
+            } else if (lang === "fr") {
+                lol = "Sous le règne de la reine Victoria, en 1870, des chiens Spitz d'Angleterre sont arrivés en Europe, où les travaux ont commencé pour créer une forme naine, améliorant les « vêtements » du Poméranien et lui donnant une sophistication globale. La beauté des meilleurs représentants des Spitz anglais et américains a une grande influence sur les éleveurs du monde entier, et progressivement les Spitz d'autres pays se modifient, rattrapant le Poméranien standard. La reine elle-même aimait tellement son Spitz Marco qu'elle était toujours et partout avec lui.";
+            } else if (lang === "de") {
+                lol = "Während der Regierungszeit von Königin Victoria im Jahr 1870 kamen Spitzhunde aus England nach Europa, wo mit der Schaffung einer Zwergform begonnen wurde, die die „Kleidung“ des Spitzhundes verbesserte und ihm insgesamt Eleganz verlieh. Die Schönheit der besten Vertreter des englischen und amerikanischen Spitz hat großen Einfluss auf Züchter auf der ganzen Welt, und nach und nach werden Spitz in anderen Ländern modifiziert, um dem Standard-Pommerschen gleichzuziehen. Die Königin selbst liebte ihren Spitz Marco so sehr, dass sie immer und überall bei ihm war.";
+            } else {
+                lol = "Язык неизвестен";
+            }
+          
+        document.getElementById('d2').textContent = lol;
+
+        }
+
+   
+    </Script>
+    
+<body>
+    <from>
+        <label for="zpsr">Выберите язык</label>
+        <input  type="text" id="d1"  name="zpsk">
+        <button onclick="showLanguage()">Выбрать</button>
+    </from>
+    <h1 id="d2"></h1>
+</body>
+</html>

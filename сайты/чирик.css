@@ -1,0 +1,158 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -1%;
+    margin-top: -1%;
+}
+
+li {
+    display: flex;
+    margin-top: 35%;
+}
+.сылка:hover {
+    color: yellow;
+}
+ul {
+    position: relative;
+    left: -35%;
+    margin-top: 10%;
+}
+h1 {
+    margin-bottom: 48%;
+}
+.подарок {
+    color: white;
+    background-color: #006599;
+    float: left;
+    padding: 15% 5%;
+    position: fixed;
+    z-index: 1;
+}
+.картинка1 {
+    width: 40%;
+    margin-left: 12%;
+}
+.milk {
+    margin-left: 10%;
+    margin-top: -100%;
+}
+.сылка {
+    text-decoration: none; color: white;
+}
+
+.пукич {
+    width: 52%;
+    float: right;
+    margin-right: 27%;
+}
+.jj {
+    position: absolute;
+    top: 72%;
+    left: 23%;
+}
+h2, h3 {
+    color: #006599
+}
+p {
+    color: #000;
+}
+.пукич2 {
+    width: 25%;
+    float: left;
+}
+.jj2 {
+    float:left;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+
+.text {
+    float: left;
+    margin-left: 5%;
+    width: 70%;   
+}
+
+.but {
+    border: 3px solid #006599;
+    background-color: #006599;
+    color: white;
+    padding: 2% 5%;
+    margin-top: 5%;
+}
+.but:hover {
+    background-color: white;
+    color: #006599;
+
+}
+.gal {
+    clear: left;
+    padding-top: 4%;
+}
+.fot {
+    width: 18%;
+    margin-left: 1%;
+}
+.fott {
+    width: 18%;
+    
+}
+.fot1 {
+    width: 31%;
+    margin-left: 1%;
+}
+.fott1 {
+    width: 31%;
+}
+
+.fot2 {
+    width: 23%;
+    margin-left: 1%;
+}
+.fott2 {
+    width: 23%;
+    
+}
+.name {
+    border: 2px solid #006599;
+    width:150%;
+    font-size: 18px;
+}
+.name1 {
+    border: 2px solid #006599;
+    width:150%;
+    font-size: 18px;
+    margin-top: 3%;
+}
+.name2 {
+    border: 2px solid #006599;
+    width:150%;
+    font-size: 18px;
+    margin-top: 1%;
+}
+.but1 {
+    border: 3px solid #006599;
+    background-color: #006599;
+    color: white;
+    padding: 6% 15%;
+    margin-top: 1%;
+}
+.but1:hover {
+    background-color: white;
+    color: #006599;
+}
+form {
+    float: left;
+    
+}
+.nul {
+    float: left;
+    margin-left: 15%;
+}
+.niz {
+    clear: left;
+    padding-top: 3%;
+}
+b {
+    color: #006599;
+}
+
+

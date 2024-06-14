@@ -1,0 +1,45 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h1 {
+    font-size: 40px;
+    color: white;
+}
+.h2 {
+    font-size: 28px;
+    color: white;
+}
+.dd1 {
+    background-color: #A6263E;
+    width: 45%;
+    padding-left:5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+body {
+    margin: 0%;
+}
+.dd2 {
+    background-color: #D99873;
+    width: 45%;
+    padding-left:5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: block;
+}   
+.field1 {
+    margin-top: 10px;
+}
+button {
+    border: 0px;
+    padding: 20px;
+    border-radius: 3%;
+    background-color: #A6263E;
+    color: white;
+    margin-left: 34%;
+    font-size: 24px;
+}
+button:active {
+    background-color: #D99873;
+
+}
